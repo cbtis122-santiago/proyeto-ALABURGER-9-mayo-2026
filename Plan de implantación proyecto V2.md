@@ -89,71 +89,74 @@ BoxShadow buttonGlow = BoxShadow(
   offset: Offset(0, 4),
 );
 
+
 lib/
-│
 ├── core/
-│   ├── constants/
-│   │   ├── app_assets.dart
-│   │   ├── app_routes.dart
-│   │   └── app_strings.dart
 │   ├── theme/
 │   │   ├── app_colors.dart
-│   │   ├── app_shadows.dart
 │   │   ├── app_text_styles.dart
-│   │   └── app_theme.dart
+│   │   ├── app_theme.dart
+│   │   └── app_shadows.dart
+│   ├── constants/
+│   │   ├── app_strings.dart
+│   │   ├── app_assets.dart
+│   │   └── app_routes.dart
 │   └── utils/
-│       ├── extensions.dart
+│       ├── validators.dart
 │       ├── formatters.dart
-│       └── validators.dart
+│       └── extensions.dart
 │
 ├── data/
 │   ├── models/
-│   │   ├── cart_item_model.dart
+│   │   ├── user_model.dart
 │   │   ├── category_model.dart
 │   │   ├── menu_item_model.dart
-│   │   ├── order_model.dart
-│   │   └── user_model.dart
+│   │   ├── cart_item_model.dart
+│   │   └── order_model.dart
 │   └── services/
 │       ├── auth_service.dart
 │       └── firestore_service.dart
 │
 ├── providers/
 │   ├── auth_provider.dart
-│   ├── cart_provider.dart
 │   ├── menu_provider.dart
+│   ├── cart_provider.dart
 │   └── order_provider.dart
 │
 ├── ui/
 │   ├── screens/
+│   │   ├── splash/
+│   │   │   └── splash_screen.dart
 │   │   ├── auth/
 │   │   │   ├── login_screen.dart
 │   │   │   └── register_screen.dart
-│   │   ├── cart/
-│   │   │   └── cart_screen.dart
 │   │   ├── home/
 │   │   │   ├── home_screen.dart
 │   │   │   └── menu_tab.dart
-│   │   ├── orders/
-│   │   │   └── orders_history_screen.dart
 │   │   ├── product/
 │   │   │   └── product_detail_screen.dart
-│   │   ├── profile/
-│   │   │   └── profile_screen.dart
-│   │   └── splash/
-│   │       └── splash_screen.dart
+│   │   ├── cart/
+│   │   │   └── cart_screen.dart
+│   │   ├── orders/
+│   │   │   └── orders_history_screen.dart
+│   │   └── profile/
+│   │       └── profile_screen.dart
+│   │
 │   └── widgets/
-│       ├── cart/
-│       │   └── cart_tile.dart
+│       ├── shared/
+│       │   ├── alaburger_button.dart
+│       │   ├── alaburger_app_bar.dart
+│       │   ├── fire_loading_widget.dart
+│       │   └── ember_badge.dart
 │       ├── menu/
-│       │   ├── category_chip.dart
-│       │   └── product_card.dart
-│       └── shared/
-│           ├── alaburger_app_bar.dart
-│           ├── alaburger_button.dart
-│           ├── ember_badge.dart
-│           └── fire_loading_widget.dart
+│       │   ├── product_card.dart
+│       │   └── category_chip.dart
+│       └── cart/
+│           └── cart_tile.dart
 │
 └── main.dart
+
+
 
 ◼ PUBSPEC.YAML — DEPENDENCIAS ESTÁNDAR (SIN PRODUCCIÓN)
 yamlname: alaburger
