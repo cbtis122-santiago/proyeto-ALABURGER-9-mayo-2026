@@ -89,83 +89,71 @@ BoxShadow buttonGlow = BoxShadow(
   offset: Offset(0, 4),
 );
 
-◼ ARQUITECTURA DEL PROYECTO
-Stack Tecnológico
-Flutter SDK   : ≥ 3.22 stable
-Dart          : ≥ 3.4
-Firebase      : Auth (Email/Password) + Cloud Firestore
-Estado        : Provider (ChangeNotifier pattern)
-Navegación    : go_router (guards de autenticación)
-IDE           : Antigravity / VS Code
-Modo Firebase : Desarrollo — NO habilitar opciones de producción
-                  (no Crashlytics, no Analytics, no Performance Monitoring)
-Estructura de Carpetas — Feature-First + Layered
 lib/
 │
 ├── core/
-│   ├── theme/
-│   │   ├── app_colors.dart          ← Tokens de color ALABURGER
-│   │   ├── app_text_styles.dart     ← Tipografía Bebas Neue / Inter
-│   │   ├── app_theme.dart           ← ThemeData dark customizado
-│   │   └── app_shadows.dart         ← Ember glows y sombras
 │   ├── constants/
-│   │   ├── app_strings.dart         ← Textos y mensajes UI
-│   │   ├── app_assets.dart          ← Rutas de assets / Lottie
-│   │   └── app_routes.dart          ← Nombres de rutas go_router
+│   │   ├── app_assets.dart
+│   │   ├── app_routes.dart
+│   │   └── app_strings.dart
+│   ├── theme/
+│   │   ├── app_colors.dart
+│   │   ├── app_shadows.dart
+│   │   ├── app_text_styles.dart
+│   │   └── app_theme.dart
 │   └── utils/
-│       ├── validators.dart          ← Email, password, phone
-│       ├── formatters.dart          ← Moneda MXN, fechas
-│       └── extensions.dart          ← String/Color extensions
+│       ├── extensions.dart
+│       ├── formatters.dart
+│       └── validators.dart
 │
 ├── data/
 │   ├── models/
-│   │   ├── user_model.dart
+│   │   ├── cart_item_model.dart
 │   │   ├── category_model.dart
 │   │   ├── menu_item_model.dart
-│   │   ├── cart_item_model.dart
-│   │   └── order_model.dart
+│   │   ├── order_model.dart
+│   │   └── user_model.dart
 │   └── services/
-│       ├── auth_service.dart        ← Firebase Auth (email/password)
-│       └── firestore_service.dart   ← CRUD Firestore (no Analytics)
+│       ├── auth_service.dart
+│       └── firestore_service.dart
 │
 ├── providers/
-│   ├── auth_provider.dart           ← Session, login, register, logout
-│   ├── menu_provider.dart           ← Categorías + items del menú
-│   ├── cart_provider.dart           ← Carrito, totales, cantidades
-│   └── order_provider.dart          ← Historial y estado de pedidos
+│   ├── auth_provider.dart
+│   ├── cart_provider.dart
+│   ├── menu_provider.dart
+│   └── order_provider.dart
 │
 ├── ui/
 │   ├── screens/
-│   │   ├── splash/
-│   │   │   └── splash_screen.dart   ← Lottie fire + logo ALABURGER
 │   │   ├── auth/
 │   │   │   ├── login_screen.dart
 │   │   │   └── register_screen.dart
-│   │   ├── home/
-│   │   │   ├── home_screen.dart     ← Shell con BottomNavBar
-│   │   │   └── menu_tab.dart        ← Catálogo de productos
-│   │   ├── product/
-│   │   │   └── product_detail_screen.dart
 │   │   ├── cart/
 │   │   │   └── cart_screen.dart
+│   │   ├── home/
+│   │   │   ├── home_screen.dart
+│   │   │   └── menu_tab.dart
 │   │   ├── orders/
 │   │   │   └── orders_history_screen.dart
-│   │   └── profile/
-│   │       └── profile_screen.dart
-│   │
+│   │   ├── product/
+│   │   │   └── product_detail_screen.dart
+│   │   ├── profile/
+│   │   │   └── profile_screen.dart
+│   │   └── splash/
+│   │       └── splash_screen.dart
 │   └── widgets/
-│       ├── shared/
-│       │   ├── alaburger_button.dart     ← CTA con ember glow
-│       │   ├── alaburger_app_bar.dart
-│       │   ├── fire_loading_widget.dart  ← Skeleton carbón
-│       │   └── ember_badge.dart          ← Contador carrito
+│       ├── cart/
+│       │   └── cart_tile.dart
 │       ├── menu/
-│       │   ├── product_card.dart         ← Card con sombra brasa
-│       │   └── category_chip.dart
-│       └── cart/
-│           └── cart_tile.dart
+│       │   ├── category_chip.dart
+│       │   └── product_card.dart
+│       └── shared/
+│           ├── alaburger_app_bar.dart
+│           ├── alaburger_button.dart
+│           ├── ember_badge.dart
+│           └── fire_loading_widget.dart
 │
-└── main.dart                            ← MultiProvider + Firebase init
+└── main.dart
 
 ◼ PUBSPEC.YAML — DEPENDENCIAS ESTÁNDAR (SIN PRODUCCIÓN)
 yamlname: alaburger
