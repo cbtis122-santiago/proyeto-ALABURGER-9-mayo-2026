@@ -1,19 +1,17 @@
 ##OBJETIVO DEL PROYECTO
+<img width="1024" height="572" alt="image" src="https://github.com/user-attachments/assets/31916a51-50fa-4896-af39-a5334f796556" />
 
 
-<img width="571" height="256" alt="image" src="https://github.com/user-attachments/assets/dcf5ede0-83b7-4473-b3b5-9a4cbe038e03" />
-<img width="265" height="412" alt="image" src="https://github.com/user-attachments/assets/a61789f8-17db-4c2c-b24f-a3244fc64fd8" />
 
 
 MARCO TEORICO
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/6f83c02b-7f7f-43c4-a762-ee4eae8d3fb5" />
 
 
-<img width="571" height="256" alt="image" src="https://github.com/user-attachments/assets/35022f1f-5f62-4007-a4cc-3deb5824311d" />
-<img width="268" height="420" alt="image" src="https://github.com/user-attachments/assets/8ff9322f-cede-4654-bf39-9dffd767c700" />
 
 
 TECNOLOGIAS UTILIZADAS
+<img width="1024" height="559" alt="image" src="https://github.com/user-attachments/assets/49462e4a-f64e-495b-9b1e-fdded1ad5434" />
 
 
-<img width="571" height="256" alt="image" src="https://github.com/user-attachments/assets/d4150df8-e100-4c29-a177-e7f5b2721dbd" />
-<img width="558" height="333" alt="image" src="https://github.com/user-attachments/assets/4bc8917c-8ec8-4ccc-af89-745139c66d03" />
+<img width="768" height="1376" alt="image" src="https://github.com/user-attachments/assets/316ab7dc-179a-4a0d-9bf7-ccf3958a94e8" />
